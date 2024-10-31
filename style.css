@@ -1,0 +1,207 @@
+/*
+Plugin Name: Scholarship Browser
+Plugin URI: http://www.ausgetauscht.de/wp-plugin-scholarship-browser.htm
+Description: Providing a Widget to show and interactively browse scholarships for German exchange students.
+Author: pfauenauge
+Version: 1.3
+Author URI: http://www.ausgetauscht.de/wp-plugin-scholarship-browser.htm
+*/
+
+
+.scholarshipList h2 a, .scholarshipList h2 a:link, .scholarshipList h2 a:visited {
+ font-weight:bold; 
+}
+
+#content .scholarshipList {
+ font-family: Georgia,serif;
+ margin: 5px 0 10px 10px;
+ font-size: 13px;
+}
+
+#content .scholarshipList h2, #content .main .index.news h2 {
+ margin-left: 0px;
+}
+ 
+.scholarshipList h2 a:hover {
+ color: red;
+}
+
+#scholarshipList_2, #scholarshipList_3, #scholarshipList_4, #scholarshipList_5, #scholarshipList_5, #scholarshipList_6, #scholarshipList_7, #scholarshipList_8, #scholarshipList_9, #scholarshipList_10 {
+ display: none;
+}
+
+#scholarshipListPages {
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
+
+#scholarshipListPages span {
+ margin: 8px;
+ padding: 4px;
+ border:solid 1px #e1e1e1;
+ font-weight: bolder;
+ font-size: larger;
+}
+#scholarshipListPages span:hover {
+ color: red;
+ background-color: #f4f4f4;
+ cursor: pointer;
+}
+#scholarshipListPages span.scholarshipListActive {
+ color: red;
+ background-color: #f4f4f4;
+}
+
+.widgetScholarshipFormContainer {
+  margin-bottom: 10pt;
+}
+.widgetScholarshipForm {
+ -moz-border-radius: 5px; /* Firefox */ 
+  -webkit-border-radius: 5px; /* Safari and Chrome */
+  border-radius: 5px; /* Opera 10.5+, future browsers, and now also Internet Explorer 6+ using IE-CSS3 */  
+  behavior: url(/js/PIE/PIE.htc);
+  border:solid 1px #e1e1e1; 
+  font: 14px Arial, Helvetica, sans-serif;  
+  border-radius:6px;
+  color: white;
+  text-align: left;
+}
+
+.widgetScholarshipForm h3.widgetFormHead {
+ font-weigh: 900;
+ padding: 3px;
+ display: none;
+}
+
+.widgetScholarshipForm .widgetFormCountry {
+ background: white;
+ height: 50px;
+ overflow-y: hidden;
+ overflow-x: hidden;
+ margin-right: 12px;
+ margin-bottom: 5px;
+ padding: 2px;
+ padding-bottom: 5px;
+}
+
+.widgetScholarshipForm .widgetFormCountry:hover {
+ height: auto;
+}
+
+.widgetFormCountryTitle:before { 
+ content: "L\0000E4nder";
+ font-size: 10px;
+ font-weight: bold;
+ text-transform: uppercase;
+ color: #e11e26;
+ margin-bottom: -13px;
+}
+
+#widgetFormCountryFull {
+ display: none;
+}
+
+#widgetFormCountryTopShowFull {
+ color: #e11e26;
+ text-decoration: underline;
+ font-size: 11px;
+ cursor: pointer;
+}
+
+.widgetFormRequTitle:before { 
+ content: "Teilnahmebedingung";
+ font-size: 10px;
+ font-weight: bold;
+ text-transform: uppercase;
+ color: #e11e26;
+ margin-bottom: -13px;
+}
+
+.widgetFormStateTitle:before { 
+ content: "Wohnort";
+ font-size: 10px;
+ font-weight: bold;
+ text-transform: uppercase;
+ color: #e11e26;
+ margin-bottom: -13px;
+}
+
+.widgetFormVolumeTitle:before { 
+ content: "F\0000F6rdervolumen";
+ font-size: 10px;
+ font-weight: bold;
+ text-transform: uppercase;
+ color: #e11e26;
+ margin-bottom: -13px;
+}
+
+.widgetFormYearTitle:before { 
+ content: "Jahr / Bewerbungsfrist";
+ font-size: 10px;
+ font-weight: bold;
+ text-transform: uppercase;
+ color: #e11e26;
+ margin-bottom: -13px;
+}
+
+
+.widgetScholarshipForm a, .widgetScholarshipForm a:link, .widgetScholarshipForm a:active, .widgetScholarshipForm a:visited {
+ color: #014171;
+ text-decoration: none;
+ font-weight: normal;
+ font-size: 11px;
+ line-height:12px;
+ white-space: nowrap;
+ background-color: white;
+}
+
+.widgetScholarshipForm .widgetFormCountry a:hover, a.widgetFormActive:link, a.widgetFormActive:active, a.widgetFormActive:visited {
+ background-color: yellow;
+ color: red;
+ font-weight: bolder;
+}
+
+.widgetScholarshipForm .widgetFormCountry .widgetFormActive:hover {
+ color: #014171;
+ text-decoration: line-through;
+ font-weight: normal;
+ background-color: white;
+}
+
+.widgetScholarshipCheck {
+ padding-left: 25px;
+ background-image: url("images/check.png");
+ background-repeat: no-repeat;
+}
+
+.widgetScholarshipFormCheck {
+ padding-left: 17px;
+ background-image: url("images/check-micro.png");
+ background-repeat: no-repeat;
+}
+
+#stipContainer {
+}
+
+#stipResult {
+}
+
+#stipCopyright {
+ font-size: 6pt;
+}
+
+#waitloading {
+ position:   fixed;
+ z-index:    1000;
+ top:        0;
+ left:       0;
+ height:     100%;
+ width:      100%;
+ background: rgba( 255, 255, 255, .8 ) 
+            url('images/wait-loading.gif') 
+            50% 50% 
+            no-repeat;
+opacity: 0.80;
+-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity = 80);
+filter: alpha(opacity = 80);
+}
